@@ -80,6 +80,8 @@ export default function App() {
         <FormSplitBill
           selectedFriend={selectedFriend}
           onSplitBill={handleSplitBill}
+          // Making each instace unique for re-render the comp on friend change
+          key={selectedFriend.id}
         />
       )}
     </div>
